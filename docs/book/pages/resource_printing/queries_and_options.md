@@ -152,20 +152,6 @@ kubectl get rc/web service/frontend pods/web-pod-13je7
 {% endmethod %}
   
 {% method %}
-## Uninitialized
-
-Kubernetes **Resources may be hidden until they have gone through an initialization process**.
-These Resources can be view with the `--include-uninitialized` flag.
-
-{% sample lang="yaml" %}
-
-```bash
-kubectl get deployments --include-uninitialized
-```
-
-{% endmethod %}
-
-{% method %}
 ## Not Found
 
 By default, Get or Describe **will return an error if an object is requested and doesn't exist**.
